@@ -17,5 +17,3 @@ class ApiService {
     }
   }
 }
-
-final userProvider = Provider<ApiService>((ref) => ApiService());

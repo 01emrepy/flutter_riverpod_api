@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_with_api/viewmodel/controller.dart';
+import 'package:riverpod_with_api/service/api_service.dart';
+import 'package:riverpod_with_api/riverpod/riverpod_base.dart';
+
+final userProvider = Provider<ApiService>((ref) => ApiService());
 
 class HomePage extends ConsumerStatefulWidget {
   const HomePage({super.key});
